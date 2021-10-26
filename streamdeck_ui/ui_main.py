@@ -8,9 +8,9 @@
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide2.QtCore import * # type: ignore
-from PySide2.QtGui import * # type: ignore
-from PySide2.QtWidgets import * # type: ignore
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
 
 from  . import resources_rc
 
@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(901, 489)
+        MainWindow.resize(1200, 489)
         self.actionImport = QAction(MainWindow)
         self.actionImport.setObjectName(u"actionImport")
         self.actionExport = QAction(MainWindow)
@@ -127,6 +127,37 @@ class Ui_MainWindow(object):
         self.gridLayout_4 = QGridLayout(self.tab_10)
         self.gridLayout_4.setObjectName(u"gridLayout_4")
         self.pages.addTab(self.tab_10, "")
+        # 11
+        self.tab_11 = QWidget()
+        self.tab_11.setObjectName(u"tab_11")
+        self.gridLayout_4 = QGridLayout(self.tab_11)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.pages.addTab(self.tab_11, "")
+        # 12
+        self.tab_12 = QWidget()
+        self.tab_12.setObjectName(u"tab_12")
+        self.gridLayout_4 = QGridLayout(self.tab_12)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.pages.addTab(self.tab_12, "")
+        # 13
+        self.tab_13 = QWidget()
+        self.tab_13.setObjectName(u"tab_13")
+        self.gridLayout_4 = QGridLayout(self.tab_13)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.pages.addTab(self.tab_13, "")
+        # 14
+        self.tab_14 = QWidget()
+        self.tab_14.setObjectName(u"tab_14")
+        self.gridLayout_4 = QGridLayout(self.tab_14)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.pages.addTab(self.tab_14, "")
+        # 15
+        self.tab_15 = QWidget()
+        self.tab_15.setObjectName(u"tab_15")
+        self.gridLayout_4 = QGridLayout(self.tab_15)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.pages.addTab(self.tab_15, "")
+
 
         self.left_verticalLayout.addWidget(self.pages)
 
@@ -211,7 +242,7 @@ class Ui_MainWindow(object):
         self.switch_page = QSpinBox(self.groupBox)
         self.switch_page.setObjectName(u"switch_page")
         self.switch_page.setMinimum(0)
-        self.switch_page.setMaximum(10)
+        self.switch_page.setMaximum(15)
         self.switch_page.setValue(0)
 
         self.formLayout.setWidget(4, QFormLayout.FieldRole, self.switch_page)
@@ -290,6 +321,11 @@ class Ui_MainWindow(object):
         self.pages.setTabText(self.pages.indexOf(self.page_8), QCoreApplication.translate("MainWindow", u"8", None))
         self.pages.setTabText(self.pages.indexOf(self.page_9), QCoreApplication.translate("MainWindow", u"9", None))
         self.pages.setTabText(self.pages.indexOf(self.tab_10), QCoreApplication.translate("MainWindow", u"10", None))
+        self.pages.setTabText(self.pages.indexOf(self.tab_11), QCoreApplication.translate("MainWindow", u"11", None))
+        self.pages.setTabText(self.pages.indexOf(self.tab_12), QCoreApplication.translate("MainWindow", u"12", None))
+        self.pages.setTabText(self.pages.indexOf(self.tab_13), QCoreApplication.translate("MainWindow", u"13", None))
+        self.pages.setTabText(self.pages.indexOf(self.tab_14), QCoreApplication.translate("MainWindow", u"14", None))
+        self.pages.setTabText(self.pages.indexOf(self.tab_15), QCoreApplication.translate("MainWindow", u"15", None))
         self.groupBox.setTitle(QCoreApplication.translate("MainWindow", u"Configure Button", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Image:", None))
         self.imageButton.setText(QCoreApplication.translate("MainWindow", u"Image...", None))
